@@ -12,6 +12,7 @@ import IMG9 from '../../assets/portfolio-9.jpg'
 import IMG10 from '../../assets/portfolio-10.jpg'
 import IMG11 from '../../assets/portfolio-11.jpg'
 import IMG12 from '../../assets/portfolio-12.jpg'
+import IMG13 from '../../assets/portfolio-13.jpg'
 
 const data = [
   {
@@ -97,6 +98,13 @@ const data = [
     title: 'Car Secure App Design',
     github: '',
     demo: 'https://www.figma.com/file/xGq0GZWGAwUvZXkyJXh4Ou/aime?type=design&node-id=1-213&mode=design&t=vygvTInadl3r2FCf-0'
+  },
+  {
+    id: 13,
+    image: IMG13,
+    title: 'Tailwind with Parallax Practice',
+    github: 'https://github.com/devandrewjpn/tailwind-practice',
+    demo: 'https://tailwind-practice-gold.vercel.app/'
   },
 ]
 
