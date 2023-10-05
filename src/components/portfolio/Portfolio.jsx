@@ -13,6 +13,7 @@ import IMG10 from '../../assets/portfolio-10.jpg'
 import IMG11 from '../../assets/portfolio-11.jpg'
 import IMG12 from '../../assets/portfolio-12.jpg'
 import IMG13 from '../../assets/portfolio-13.jpg'
+import IMG14 from '../../assets/portfolio-14.jpg'
 
 const data = [
   {
@@ -105,6 +106,13 @@ const data = [
     title: 'Tailwind with Parallax Practice',
     github: 'https://github.com/devandrewjpn/tailwind-practice',
     demo: 'https://tailwind-practice-gold.vercel.app/'
+  },
+  {
+    id: 14,
+    image: IMG14,
+    title: 'Flux for Lead Marketing',
+    github: 'https://github.com/devandrewjpn/lead-flux',
+    demo: 'https://devandrew.com.br/lead-flux/'
   },
 ]
 
