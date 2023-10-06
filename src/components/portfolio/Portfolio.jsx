@@ -110,7 +110,7 @@ const data = [
   {
     id: 14,
     image: IMG14,
-    title: 'Flux for Lead Marketing',
+    title: 'Complete Landindg Page and Lead Flux for Marketing Agency',
     github: 'https://github.com/devandrewjpn/lead-flux',
     demo: 'https://devandrew.com.br/lead-flux/'
   },
