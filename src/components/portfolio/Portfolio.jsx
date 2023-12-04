@@ -14,8 +14,53 @@ import IMG11 from '../../assets/portfolio-11.jpg'
 import IMG12 from '../../assets/portfolio-12.jpg'
 import IMG13 from '../../assets/portfolio-13.jpg'
 import IMG14 from '../../assets/portfolio-14.jpg'
+import IMG15 from '../../assets/portfolio-15.jpg'
+import IMG16 from '../../assets/portfolio-16.jpg'
+import IMG17 from '../../assets/portfolio-17.jpg'
 
 const data = [
+  {
+    id: 15,
+    image: IMG15,
+    title: 'MetaVerse Landing Page with ReactJS and FramerMotion',
+    github: 'https://github.com/devandrewjpn/metaverse-website',
+    demo: 'https://metaverse-website-sigma.vercel.app/'
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: 'React DOG Instagram',
+    github: 'https://github.com/devandrewjpn/react-dog-project',
+    demo: 'https://react-dog-project.vercel.app/login'
+  },
+  {
+    id: 14,
+    image: IMG14,
+    title: 'Complete Landindg Page and Lead Flux for Marketing Agency',
+    github: 'https://github.com/devandrewjpn/lead-flux',
+    demo: 'https://devandrew.com.br/lead-flux/'
+  },
+  {
+    id: 13,
+    image: IMG13,
+    title: 'Tailwind with Parallax Practice',
+    github: 'https://github.com/devandrewjpn/tailwind-practice',
+    demo: 'https://tailwind-practice-gold.vercel.app/'
+  },
+  {
+    id: 16,
+    image: IMG16,
+    title: 'FullStack Ecommerce Dashboard for Store Management in NextJS',
+    github: 'https://github.com/devandrewjpn/next-ecommerce',
+    demo: 'https://next-ecommerce-gamma-ten.vercel.app'
+  },
+  {
+    id: 17,
+    image: IMG17,
+    title: 'NextJS Ecommerce Store Page Consuming a Dashboard API',
+    github: 'https://github.com/devandrewjpn/next-ecommerce-store',
+    demo: 'https://next-ecommerce-store-dun.vercel.app/'
+  },
   {
     id: 1,
     image: IMG1,
@@ -29,13 +74,6 @@ const data = [
     title: 'NodeJS Basic CRUD API',
     github: 'https://github.com/devandrewjpn/node-basic-crud-api/tree/master',
     demo: ''
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: 'React DOG Instagram',
-    github: 'https://github.com/devandrewjpn/react-dog-project',
-    demo: 'https://react-dog-project.vercel.app/login'
   },
   {
     id: 4,
@@ -99,20 +137,6 @@ const data = [
     title: 'Car Secure App Design',
     github: '',
     demo: 'https://www.figma.com/file/xGq0GZWGAwUvZXkyJXh4Ou/aime?type=design&node-id=1-213&mode=design&t=vygvTInadl3r2FCf-0'
-  },
-  {
-    id: 13,
-    image: IMG13,
-    title: 'Tailwind with Parallax Practice',
-    github: 'https://github.com/devandrewjpn/tailwind-practice',
-    demo: 'https://tailwind-practice-gold.vercel.app/'
-  },
-  {
-    id: 14,
-    image: IMG14,
-    title: 'Complete Landindg Page and Lead Flux for Marketing Agency',
-    github: 'https://github.com/devandrewjpn/lead-flux',
-    demo: 'https://devandrew.com.br/lead-flux/'
   },
 ]
 

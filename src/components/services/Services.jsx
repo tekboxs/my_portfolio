@@ -2,6 +2,44 @@ import React from 'react'
 import './services.css'
 import {BiCheck} from 'react-icons/bi'
 
+const backEndServices = [
+  {
+    id: 1,
+    title: "Restfull API'S"
+  },
+  {
+    id: 2,
+    title: "Fullstack aplications"
+  },
+  {
+    id: 3,
+    title: "Database configuration"
+  },
+  {
+    id: 4,
+    title: "Firebase development"
+  },
+]
+
+const frontEndServices = [
+  {
+    id: 1,
+    title: "Website development"
+  },
+  {
+    id: 2,
+    title: "System development"
+  },
+  {
+    id: 3,
+    title: "Mobile development"
+  },
+  {
+    id: 4,
+    title: "Style upgrades"
+  },
+]
+
 const Services = () => {
   return (
     <section id='services'>
@@ -11,30 +49,16 @@ const Services = () => {
       <div className="container services__container">
         <article className='service'>
           <div className="service__head">
-            <h3>UI-UX Design</h3>
+            <h3>BackEnd</h3>
           </div>
 
           <ul className='service__list'>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Figma Layouts</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Color, identity and typography recommendation</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Prototypes</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>WebSite user experience reform</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>WebSystem user experience reform</p>
-            </li>
+            {backEndServices.map((service) => (
+              <li key={service.id}>
+                <BiCheck className='service__list-icon' />
+                <p>{service.title}</p>
+              </li>
+            ))}
           </ul>
         </article>
 
@@ -44,26 +68,12 @@ const Services = () => {
           </div>
 
           <ul className='service__list'>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Website development</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Website design</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Web systems development</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>FrontEnd Mobile applications</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>User Experience development</p>
-            </li>
+          {frontEndServices.map((service) => (
+              <li key={service.id}>
+                <BiCheck className='service__list-icon' />
+                <p>{service.title}</p>
+              </li>
+            ))}
           </ul>
         </article>
       </div>
