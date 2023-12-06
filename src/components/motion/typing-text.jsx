@@ -30,7 +30,7 @@ export const TypingText = ({ title, initialDelay = 0 }) => {
               transition: {
                 type: "tween",
                 ease: "easeIn",
-                delay: index * 0.1, // Aplique atraso com base no índice
+                delay: index * 0.1, 
               },
             },
           }}
