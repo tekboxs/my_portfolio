@@ -3,9 +3,10 @@ import './testimonials.css'
 import AV1 from '../../assets/avatar1.jpg'
 import AV2 from '../../assets/avatar2.jpg'
 import AV3 from '../../assets/avatar3.jpg'
-import AV4 from '../../assets/avatar4.jpg'
-import { Pagination,Autoplay, Navigation  } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination,Autoplay, Navigation  } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { motion } from 'framer-motion'
+import { showFromTopVariants } from '../motion/variants'
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -37,31 +38,33 @@ const data = [
 const Testimonials = () => {
   return (
     <section id='testimonials'>
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <motion.h5 variants={showFromTopVariants(200)} initial="hidden" whileInView="visible" viewport={{once:true}}>Review from clients</motion.h5>
+      <motion.h2 variants={showFromTopVariants(200,0.3)} initial="hidden" whileInView="visible" viewport={{once:true}}>Testimonials</motion.h2>
 
-      <Swiper className="container testimonials__container"
-        modules={[Pagination,Autoplay,Navigation]}
-        spaceBetween={50}
-        loop={true}
-        autoplay={true}
-        delay={1000}
-        slidesPerView={1}
-        navigation={false}
-        pagination={{ clickable: true }}
-      >
-        {data.map(({id,avatar,name,review}) => {
-          return (
-            <SwiperSlide key={id} className='testimonial'>
-              <div className="client__avatar">
-                <img src={avatar} alt="Avatar One" />
-              </div>
-              <h5 className='client__name'>{name}</h5>
-              <small className='client__review'>{review}</small>
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
+      <motion.div variants={showFromTopVariants(200,0.4)} initial="hidden" whileInView="visible" viewport={{once:true}}>
+        <Swiper className="container testimonials__container"
+          modules={[Pagination,Autoplay,Navigation]}
+          spaceBetween={50}
+          loop={true}
+          autoplay={true}
+          delay={1000}
+          slidesPerView={1}
+          navigation={false}
+          pagination={{ clickable: true }}
+        >
+          {data.map(({id,avatar,name,review}) => {
+            return (
+              <SwiperSlide key={id} className='testimonial'>
+                <div className="client__avatar">
+                  <img src={avatar} alt="Avatar One" />
+                </div>
+                <h5 className='client__name'>{name}</h5>
+                <small className='client__review'>{review}</small>
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </motion.div>
     </section>
   )
 }

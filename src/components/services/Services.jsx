@@ -1,6 +1,8 @@
 import React from 'react'
 import './services.css'
 import {BiCheck} from 'react-icons/bi'
+import { motion } from 'framer-motion'
+import { showFromTopVariants } from '../motion/variants'
 
 const backEndServices = [
   {
@@ -43,36 +45,39 @@ const frontEndServices = [
 const Services = () => {
   return (
     <section id='services'>
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+      <motion.h5 variants={showFromTopVariants(200)} initial="hidden" whileInView="visible" viewport={{once:true}}>What I Offer</motion.h5>
+      <motion.h2 variants={showFromTopVariants(200,0.3)} initial="hidden" whileInView="visible" viewport={{once:true}}>Services</motion.h2>
 
       <div className="container services__container">
+        <motion.div variants={showFromTopVariants(200)} initial="hidden" whileInView="visible" viewport={{once:true}}>
+          <article className='service'>
+            <div className="service__head">
+              <motion.h3 variants={showFromTopVariants(200,0.1)} initial="hidden" whileInView="visible" viewport={{once:true}}>BackEnd</motion.h3>
+            </div>
+
+            <ul className='service__list'>
+              {backEndServices.map((service,i) => (
+                <motion.li variants={showFromTopVariants(200,i/10)} initial="hidden" whileInView="visible" viewport={{once:true}} key={service.id}>
+                  <BiCheck className='service__list-icon' />
+                  <p>{service.title}</p>
+                </motion.li>
+              ))}
+            </ul>
+          </article>
+        </motion.div>
+        
+
         <article className='service'>
           <div className="service__head">
-            <h3>BackEnd</h3>
+            <motion.h3 variants={showFromTopVariants(200,0.1)} initial="hidden" whileInView="visible" viewport={{once:true}}>FrontEnd</motion.h3>
           </div>
 
           <ul className='service__list'>
-            {backEndServices.map((service) => (
-              <li key={service.id}>
+          {frontEndServices.map((service,i) => (
+              <motion.li variants={showFromTopVariants(200,i/10)} initial="hidden" whileInView="visible" viewport={{once:true}} key={service.id}>
                 <BiCheck className='service__list-icon' />
                 <p>{service.title}</p>
-              </li>
-            ))}
-          </ul>
-        </article>
-
-        <article className='service'>
-          <div className="service__head">
-            <h3>FrontEnd</h3>
-          </div>
-
-          <ul className='service__list'>
-          {frontEndServices.map((service) => (
-              <li key={service.id}>
-                <BiCheck className='service__list-icon' />
-                <p>{service.title}</p>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </article>

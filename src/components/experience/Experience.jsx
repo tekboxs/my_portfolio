@@ -1,6 +1,8 @@
 import React from 'react'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
+import { motion } from 'framer-motion'
+import { showFromTopVariants } from '../motion/variants'
 
 const frontEndSkills = [
   {
@@ -91,35 +93,39 @@ const backEndSkills = [
 const Experience = () => {
   return (
     <section id='experience' >
-      <h5>What Skills I have</h5>
-      <h2>My Experience</h2>
+      <motion.h5 variants={showFromTopVariants(200,)} initial="hidden" whileInView="visible" viewport={{once:true}}>What Skills I have</motion.h5>
+      <motion.h2 variants={showFromTopVariants(200,0.3)} initial="hidden" whileInView="visible" viewport={{once:true}}>My Experience</motion.h2>
 
       <div className="container experience__container">
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            {frontEndSkills.map((skill) => (
-              <article key={skill.id} className='experience__details'>
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>{skill.title}</h4>
-                <small className="text-light">{skill.level}</small>
-              </div>
-            </article>
+            {frontEndSkills.map((skill,i) => (
+              <motion.div variants={showFromTopVariants(200,i / 10)} initial="hidden" whileInView="visible" viewport={{once:true}}>
+                <article key={skill.id} className='experience__details'>
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>{skill.title}</h4>
+                    <small className="text-light">{skill.level}</small>
+                  </div>
+                </article>
+              </motion.div>
             ))}
           </div>
         </div>
         <div className="experience_backend">
           <h3>Backend Development</h3>
           <div className="experience__content">
-          {backEndSkills.map((skill) => (
-              <article key={skill.id} className='experience__details'>
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>{skill.title}</h4>
-                <small className="text-light">{skill.level}</small>
-              </div>
-            </article>
+          {backEndSkills.map((skill,i) => (
+              <motion.div variants={showFromTopVariants(200,i / 10)} initial="hidden" whileInView="visible" viewport={{once:true}}>
+                <article key={skill.id} className='experience__details'>
+                  <BsPatchCheckFill className="experience__details-icon" />
+                  <div>
+                    <h4>{skill.title}</h4>
+                    <small className="text-light">{skill.level}</small>
+                  </div>
+                </article>
+              </motion.div>
             ))}
           </div>
         </div>

@@ -17,6 +17,8 @@ import IMG14 from '../../assets/portfolio-14.jpg'
 import IMG15 from '../../assets/portfolio-15.jpg'
 import IMG16 from '../../assets/portfolio-16.jpg'
 import IMG17 from '../../assets/portfolio-17.jpg'
+import { motion } from 'framer-motion'
+import { showFromTopVariants } from '../motion/variants'
 
 const data = [
   {
@@ -143,22 +145,24 @@ const data = [
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>My recent Work</h5>
-      <h2>Portfolio</h2>
+      <motion.h5 variants={showFromTopVariants(200)} initial="hidden" whileInView="visible" viewport={{once:true}}>My recent Work</motion.h5>
+      <motion.h2 variants={showFromTopVariants(200,0.3)} initial="hidden" whileInView="visible" viewport={{once:true}}>Portfolio</motion.h2>
 
       <div className="container portfolio__container">
         {data.map(({id,image,title,github,demo}) =>  {
           return (
-            <article key={id} className='portfolio__item'>
-              <div className='portfolio__item-image'>
-                <img src={image} alt="" />
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                {github !== '' ? <a href={github} className='btn' rel='noreferrer' target='_blank'>Github</a> : ''}
-                {demo !== '' ? <a href={demo} className='btn btn-primary' rel='noreferrer' target='_blank'>Live Demo</a> : ''}
-              </div>
-            </article>
+            <motion.div variants={showFromTopVariants(200,0.4)} initial="hidden" whileInView="visible" viewport={{once:true}}>
+              <article key={id} className='portfolio__item'>
+                <div className='portfolio__item-image'>
+                  <img src={image} alt="" />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  {github !== '' ? <a href={github} className='btn' rel='noreferrer' target='_blank'>Github</a> : ''}
+                  {demo !== '' ? <a href={demo} className='btn btn-primary' rel='noreferrer' target='_blank'>Live Demo</a> : ''}
+                </div>
+              </article>
+            </motion.div>
           )
         })}
       </div>

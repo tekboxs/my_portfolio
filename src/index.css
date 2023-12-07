@@ -42,7 +42,12 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
+input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+textarea::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
 /* global styles */
 .container {
     width: var(--container-width-lg);
