@@ -10,14 +10,14 @@ import { motion } from 'framer-motion';
 const navVariants = {
   hidden: {
     opacity: 0,
-    y: 30
+    y: 30,
   },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       type: 'spring',
-      delay: 2
+      delay: 1.2
     }
   }
 }
