@@ -41,16 +41,16 @@ const Contact = () => {
             <article className='contact__option'>
               <MdOutlineEmail className='contact__option-icon' />
               <h4>Email</h4>
-              <h5>yuutoandrew.jpn@gmail.com</h5>
-              <a href="mailto:yuutoandrew.jpn@gmail.com" target='_blank' rel='noreferrer'>Send a Message</a>
+              <h5>miguel.cg.contato@gmail.com</h5>
+              <a href="mailto:miguel.cg.contato@gmail.com" target='_blank' rel='noreferrer'>Send a Message</a>
             </article>
           </motion.div>
           <motion.div variants={showFromTopVariants(200,0.5)} initial="hidden" whileInView="visible" viewport={{once:true}}>
             <article className='contact__option'>
               <BsWhatsapp  className='contact__option-icon'/>
               <h4>WhatsApp</h4>
-              <h5>+55 31 9 9976 8768</h5>
-              <a href="https://api.whatsapp.com/send/?phone=5531999768768" target='_blank' rel='noreferrer'>Send a Message</a>
+              <h5>+55 69 9219 6666</h5>
+              <a href="https://api.whatsapp.com/send/?phone=556992196666" target='_blank' rel='noreferrer'>Send a Message</a>
             </article>
           </motion.div>
         </div>

@@ -23,7 +23,7 @@ const Header = () => {
     <header>
       <div className='container header__container'>
         <h5>Hello I'm</h5>
-        <h1><TypingText title="Andrew A." /></h1>
+        <h1><TypingText title="Miguel C.G." /></h1>
         <motion.h5 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.8 }} className='text-light'>Fullstack Developer</motion.h5>
         <Cta />
         <HeaderSocials />

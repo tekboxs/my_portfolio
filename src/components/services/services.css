@@ -5,7 +5,7 @@
 }
 
 .service {
-    background: var(--color-bg-variant);
+    background: var(--color-white);
     border-radius: 0 0 2rem 2rem;
     border: 1px solid var(--color-primary);
     height: fit-content;
@@ -13,7 +13,7 @@
 }
 
 .service:hover {
-    background: transparent;
+    background: var(--color-bg);
     border-color: var(--color-primary-variant);
     cursor: default;
 }
@@ -42,12 +42,13 @@
 }
 
 .service__list-icon {
-    color: var(--color-primary);
+    color: var(--color-black);
     margin-top: 2px;
 }
 
 .service__list p {
     font-size: .9rem;
+    color: var(--color-black);
 }
 
 @media screen and (max-width: 1024px) {

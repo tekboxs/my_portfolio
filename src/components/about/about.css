@@ -39,32 +39,40 @@
     background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     transition: var(--transition);
 }
 
 .about__card:hover {
-    background: transparent;
+    background: var(--color-primary-variant);
     border-color: var(--color-primary-variant);
     cursor: default;
 }
 
 .about__icon {
-    color: var(--color-primary);
+    color: var(--color-white);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .about__card h5 {
     font-size: .95rem;
+    color: var(--color-light) ;
 }
 
 .about__card small {
     font-size: .7rem;
     color: var(--color-light);
 }
-
+.about__card__text{
+    padding:  1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background: var(--color-primary);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
