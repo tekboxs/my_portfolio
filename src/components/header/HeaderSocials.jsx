@@ -20,10 +20,10 @@ const linkVariants = {
 const HeaderSocials = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 3.1 }} className='header__socials'>
-        <motion.div variants={linkVariants} initial="hidden" animate="visible">
+        <motion.div variants={linkVariants} initial="hidden" animate="visible" className = 'header__socials__teste'>
           <a href="https://www.linkedin.com/in/miguel-casa-grande-dos-santos-92b41a250/" target='_blank' rel="noreferrer"><BsLinkedin /></a>
         </motion.div>
-        <motion.div variants={linkVariants} initial="hidden" animate="visible">
+        <motion.div variants={linkVariants} initial="hidden" animate="visible" className = 'header__socials__teste'>
           <a href="https://github.com/tekboxs" target='_blank' rel="noreferrer"><FaGithub /></a>
         </motion.div>
     </motion.div>

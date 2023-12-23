@@ -8,22 +8,26 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import BlurFilter from './components/blur_filter/blur_filter'
 
 const App = () => {
 
   return (
     <>
-      <Header />
       <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      {/* <Testimonials /> */}
-      <Contact />
+      <div className='back__blur'>
+        <Header />
+        <About />
+        <Experience />
+        <Services />
+        <Portfolio />
+        <Contact />
+      </div>
       <Footer />
     </>
   )
 }
+
+
 
 export default App

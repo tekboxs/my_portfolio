@@ -54,20 +54,7 @@ const Contact = () => {
             </article>
           </motion.div>
         </div>
-        <form ref={form} onSubmit={sendEmail} action="">
-          <motion.div variants={showFromTopVariants(200,0.6)} initial="hidden" whileInView="visible" viewport={{once:true}}>
-            <input type="text" name='name' placeholder='Your Full name' required />
-          </motion.div>
-          <motion.div variants={showFromTopVariants(200,0.7)} initial="hidden" whileInView="visible" viewport={{once:true}}>
-            <input type="email" name='email' placeholder='Your Email' required />
-          </motion.div>
-          <motion.div variants={showFromTopVariants(200,0.8)} initial="hidden" whileInView="visible" viewport={{once:true}}>
-            <textarea name="message" rows="6" placeholder='Your Message' required></textarea>
-          </motion.div>
-          <motion.button variants={showFromTopVariants(200,1)} initial="hidden" whileInView="visible" viewport={{once:true}} type='submit' disabled={send} className='btn btn-primary'>
-            {send ? 'Sending..' : 'Send Message'}
-          </motion.button>
-        </form>
+         
       </div>
     </section>
   )

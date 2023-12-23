@@ -12,24 +12,24 @@ const data = [
     image: IMG15,
     title: 'DMG Marmores',
     github: '',
-    demo: 'https://metaverse-website-sigma.vercel.app/'
+    demo: 'https://play.google.com/store/apps/details?id=com.dmg.dmg_delivery'
   },
   {
     id: 3,
     image: IMG3,
     title: 'Boutique Style',
     github: '',
-    demo: 'https://react-dog-project.vercel.app/login'
+    demo: 'https://play.google.com/store/apps/details?id=com.cecum.boutique'
   },
   {
     id: 14,
     image: IMG14,
     title: 'FlutterPot',
-    github: 'https://github.com/devandrewjpn/lead-flux',
+    github: 'https://github.com/tekboxs/flutterpot?tab=readme-ov-file',
     demo: ''
   },
 
-]
+] 
 
 const Portfolio = () => {
   return (
@@ -43,7 +43,7 @@ const Portfolio = () => {
             <motion.div variants={showFromTopVariants(200,0.4)} initial="hidden" whileInView="visible" viewport={{once:true}}>
               <article key={id} className='portfolio__item'>
                 <div className='portfolio__item-image'>
-                  <img src={image} alt="" />
+                  <img src={image} alt=""/>
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">

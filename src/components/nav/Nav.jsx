@@ -27,8 +27,8 @@ const scrollToNavMap = [
   { from: 555, to: 999, nav: '#about' },
   { from: 1000, to: 1776, nav: '#experience' },
   { from: 1777, to: 2332, nav: '#services' },
-  { from: 2333, to: 4999, nav: '#services' },
-  { from: 5000, to: 5499, nav: '#contact' },
+  { from: 2333, to: 3000, nav: '#services' },
+  { from: 3001, to: 5499, nav: '#contact' },
 ];
 
 const Nav = () => {

@@ -1,13 +1,15 @@
 nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
-    display: block;
+    /* display: block; */
     padding: 0.7rem 1.7rem;
-    z-index: 2;
+    z-index: 999;
     position: fixed;
+    bottom: 10%;
     left: 50%;
+    /* left: 27%; */
     transform: translateX(-50%);
-    bottom: 2rem;
+    /* bottom: 2rem; */
     display: flex;
     gap: .8rem;
     border-radius: 3rem;
